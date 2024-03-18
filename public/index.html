@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Website</title>
+    <script src='./index.js' defer></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Joke Website</h1>
+    </header>
+    <main>
+        <div id="main-div">
+        <div id="random-joke"></div>
+        <div id="category-select">
+            <div class="category-names1">
+                <label for="joke-categories">Joke Categories</label><br>
+                <select name="joke-categories" id="joke-categories">
+                    <option value="no-option">Select A Category</option>
+                    <option value="funny">Funny Jokes</option>
+                    <option value="lame">Lame Jokes</option>
+                </select>
+                <button id="selected-joke-category">Select Joke Category</button>
+            </div>
+            <h4>OR</h4>
+            <div id="category-names2">
+                <form id="search-container">
+                    <label for="category-search">Look For Joke Categories:</label>
+                    <input type="text" id="category-search" name="search" placeholder="Enter category here...">
+                    <button type="submit" id="search-categories" class="btn">Search</button>
+                </form>
+            </div>
+        </div>
+        <div id="categories-div">
+        </div>
+        <div id="add-new-joke">
+            <button id="add-new-joke-btn">Add A New Joke</button>
+            <div id="form-popup" id="myForm">
+                <form id="form-container">
+                    <h2>Add A New Joke</h2>
+                    <label for="category"><b>Category</b></label>
+                    <input type="text" placeholder="category" name="category" id="category" required><br>
+                    <label for="joke"><b>Joke</b></label>
+                    <input type="text" placeholder="Joke" name="joke" id="joke" required><br>
+                    <label for="response"><b>Response</b></label>
+                    <input type="text" placeholder="response" name="response" id="response" required><br>
+                    <button type="submit" id="save-product" class="btn">Save</button>
+                    <button type="button" id="cancel-btn">Close</button>
+                </form>
+            </div>
+            </div>
+    </main>
+</body>
+
+</html>
